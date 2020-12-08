@@ -1,23 +1,12 @@
-import logo from './logo.svg';
 import './App.css';
+import RepoBoard from './components/RepoBoard';
+import FollowersBoard from './components/FollowersBoard';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <RepoBoard titlename={"Top 5 Repositories With Most Stars in the Last Month"}/>
+      <FollowersBoard titlename={"Top 5 Most Active Users By Followers Created Over the Last Year"}/>
     </div>
   );
 }
